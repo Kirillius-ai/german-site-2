@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding-top: 60px;
+}
+
+.site-header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #00bcd4;
+}
+
+main {
+    padding: 2rem;
+}
+
+.booking-process ul {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+.service-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #34495e;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.service-card img {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 5px;
+}
+
+.quality-speed,
+.pricing,
+.testimonials {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.testimonial {
+    background-color: #2c3e50;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.site-footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.whyUS {
+    color: #fff;
+    text-align: center;
+}
+
+.textwhyUS {
+    color: #fff;
+    text-align: left;
+}
+
+.services {
+    color: #fff;
+    text-align: center;
+}
+
+.contact-info {
+    text-align: right;
+    color: #fff; /* Цвет текста */
+    font-size: 1rem; /* Размер шрифта */
+    padding: 10px 20px; /* Внутренние отступы */
+    border: none; /* Убрать границу */
+    border-radius: 5px; /* Закругление углов */
+    cursor: pointer; /* Указатель мыши */
+    transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+/* Mobile Adaptation */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        margin-top: 1rem;
+    }
+}
